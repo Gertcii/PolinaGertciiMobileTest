@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import setup.BaseTest;
 import setup.ConfProperties;
 
-public class nativeMobileTests extends BaseTest {
+public class NativeMobileTests extends BaseTest {
 
     private String email = ConfProperties.getEmail();
     private String userName = ConfProperties.getUserName();
@@ -25,6 +25,7 @@ public class nativeMobileTests extends BaseTest {
         getPo().inputText("userNameField", userName);
         getPo().inputText("passField", password);
         getPo().inputText("confPassField", password);
+        getPo().getWelement("switchIAgree").click();
         getPo().getWelement("regNewAccount").click();
         getPo().inputText("loginField", email);
         getPo().inputText("passwordField", password);

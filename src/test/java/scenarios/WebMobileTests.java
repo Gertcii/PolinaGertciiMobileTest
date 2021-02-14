@@ -10,7 +10,7 @@ import setup.ConfProperties;
 
 import java.util.List;
 
-public class webMobileTests extends BaseTest {
+public class WebMobileTests extends BaseTest {
 
     private String inputText = ConfProperties.getInputText();
     private String url = ConfProperties.getUrl();
