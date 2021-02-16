@@ -36,7 +36,7 @@ public class NativePageObject  {
     WebElement passwordField;
 
     @AndroidFindBy(xpath = "//*[contains(@text, 'BudgetActivity')]")
-    WebElement textView;
+    WebElement BudgetActivity;
 
 
     public NativePageObject(AppiumDriver appiumDriver) {

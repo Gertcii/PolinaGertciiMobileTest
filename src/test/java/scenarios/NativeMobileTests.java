@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import setup.BaseTest;
 import setup.ConfProperties;
 
-public class nativeMobileTests extends BaseTest {
+public class NativeMobileTests extends BaseTest {
 
     private String email = ConfProperties.getEmail();
     private String userName = ConfProperties.getUserName();
@@ -30,7 +30,7 @@ public class nativeMobileTests extends BaseTest {
         getPo().inputText("passwordField", password);
         getPo().getWelement("signInBtn").click();
 
-        assert (getPo().getWelement("textView").isDisplayed()) : "Page BudgetActivity is not opened";
+        assert (getPo().getWelement("BudgetActivity").isDisplayed()) : "Page BudgetActivity is not opened";
     }
 
 }
